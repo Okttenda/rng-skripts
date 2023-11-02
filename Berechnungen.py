@@ -111,11 +111,57 @@ def dreieck():
 
 
 def parrallelogramm():
-    print(error)
+    print_form()
+    choice = input("Wähle deine Operation: ")
+    if choice == "a":
+        g_not_int = input("Gebe die Seite g ein: ")
+        g = int(g_not_int)
+        h_not_int = input("Gebe den Wert h ein: ")
+        h = int(h_not_int)
+        result = g * h
+        print("\nDas Ergebnis beträgt:")
+        print("A=", result)
+    elif choice == "b":
+        a_not_int = input("Gebe den Wert a ein: ")
+        a = int(a_not_int)
+        b_not_int = input("Gebe den Wert b ein: ")
+        b = int(b_not_int)
+        result = 2 * a + 2 * b
+        print("\nDas Ergebnis beträgt:")
+        print("U=", result)
+    else:
+        print("Dies ist keine option!")
+        dreieck()
 
 
 def trapez():
-    print(error)
+    print_form()
+    choice = input("Wähle deine Operation: ")
+    if choice == "a":
+        a_not_int = input("Gebe den Wert a ein: ")
+        a = int(a_not_int)
+        c_not_int = input("Gebe den Wert c ein: ")
+        c = int(c_not)
+        h_not_int = input("Gebe den Wert h ein: ")
+        h = int(h_not_int)
+        result = a + c / 2 * h
+        print("\nDas Ergebnis beträgt:")
+        print("A=", result)
+    elif choice == "b":
+        a_not_int = input("Gebe den Wert a ein: ")
+        a = int(a_not_int)
+        b_not_int = input("Gebe den Wert b ein: ")
+        b = int(b_not)
+        c_not_int = input("Gebe den Wert c ein: ")
+        c = int(c_not_int)
+        d_not_int = input("Gebe den Wert d ein: ")
+        d = int(d_not_int)
+        result = a + b + c + d
+        print("\nDas Ergenis beträgt:")
+        print("U=", result)
+    else:
+        print("Dies ist keine option!")
+        dreieck()
 
 
 def kreis():
