@@ -141,7 +141,7 @@ def trapez():
         a_not_int = input("Gebe den Wert a ein: ")
         a = int(a_not_int)
         c_not_int = input("Gebe den Wert c ein: ")
-        c = int(c_not)
+        c = int(c_not_int)
         h_not_int = input("Gebe den Wert h ein: ")
         h = int(h_not_int)
         result = a + c / 2 * h
@@ -151,7 +151,7 @@ def trapez():
         a_not_int = input("Gebe den Wert a ein: ")
         a = int(a_not_int)
         b_not_int = input("Gebe den Wert b ein: ")
-        b = int(b_not)
+        b = int(b_not_int)
         c_not_int = input("Gebe den Wert c ein: ")
         c = int(c_not_int)
         d_not_int = input("Gebe den Wert d ein: ")
