@@ -142,7 +142,7 @@ def trapez():
         a_not_int = input("Gebe den Wert a ein: ")
         a = int(a_not_int)
         c_not_int = input("Gebe den Wert c ein: ")
-        c = int(c_not)
+        c = int(c_not_int)
         h_not_int = input("Gebe den Wert h ein: ")
         h = int(h_not_int)
         result = a + c / 2 * h
@@ -203,8 +203,17 @@ def kreis_sektor():
         result = pi * r * 2 * alpha / 360
         print("\nDas Ergebnis beträgt:")
         print("A=", result)
+    elif choice == "b":
+        r_not_int = input("Gebe den Wert r ein: ")
+        r = int(r_not_int)
+        alpha_not_int = input("Gebe den Wert ""alpha"" ein: ")
+        alpha = int(alpha_not_int)
+        result = 2 * pi * r * alpha / 360
+        print("\nDas Ergebnis beträgt:")
+        print("b=", result)
     else:
-        print(error)
+        print("Dies ist keine Option!")
+        kreis_sektor()
 
 
 def kreis_ring():
