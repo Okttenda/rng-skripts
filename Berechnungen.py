@@ -217,7 +217,13 @@ def kreis_sektor():
 
 
 def kreis_ring():
-    print(error)
+    r1_not_int = input("Gebe den Wert r aus dem inneren Kreis ein: ")
+    r1 = int(r1_not_int)
+    r2_not_int = input("Gebe den Wert r aus dem äuserem Kreis ein: ")
+    r2 = int(r2_not_int)
+    result = pi * r2 - pi * r1
+    print("\nDas Ergebnis beträgt:")
+    print("A=", result)
 
 
 print("Wähle deine Berechnungskategorie:\n")
