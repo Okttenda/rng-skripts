@@ -1,6 +1,7 @@
 abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
        'w', 'x', 'y', 'z']
 error = "\nERROR: IN PROGRESS\n"
+pi = 3.1415926536
 
 
 def print_form():
@@ -165,15 +166,64 @@ def trapez():
 
 
 def kreis():
-    print(error)
+    print_form()
+    choice = input("Wähle deine Operation: ")
+    if choice == "a":
+        r_not_int = input("Gebe den Wert r ein: ")
+        r = int(r_not_int)
+        result = r * r * pi
+        print("\nDas Ergenis beträgt:")
+        print("A=", result)
+    elif choice == "b":
+        r_not_int = input("Gebe den Wert r ein: ")
+        r = int(r_not_int)
+        result = 2 * pi * r
+        print("\nDas Ergenis beträgt:")
+        print("U=", result)
+    else:
+        print("Dies ist keine option!")
+        kreis()
 
 
 def kreis_sektor():
-    print(error)
+    form = ["Flächeninhalt", "Kreisbogen"]
+    counter = 0
+    list = 0
+    while counter < 2:
+        print("Für", form[list], "Drücke", abc[list])
+        list = list + 1
+        counter = counter + 1
+    print("\n")
+    choice = input("Wähle deine Operation: ")
+    if choice == "a":
+        r_not_int = input("Gebe den Wert r ein: ")
+        r = int(r_not_int)
+        alpha_not_int = input("Gebe den Wert ""alpha"" ein: ")
+        alpha = int(alpha_not_int)
+        result = pi * r * 2 * alpha / 360
+        print("\nDas Ergebnis beträgt:")
+        print("A=", result)
+    elif choice == "b":
+        r_not_int = input("Gebe den Wert r ein: ")
+        r = int(r_not_int)
+        alpha_not_int = input("Gebe den Wert ""alpha"" ein: ")
+        alpha = int(alpha_not_int)
+        result = 2 * pi * r * alpha / 360
+        print("\nDas Ergebnis beträgt:")
+        print("b=", result)
+    else:
+        print("Dies ist keine Option!")
+        kreis_sektor()
 
 
 def kreis_ring():
-    print(error)
+    r1_not_int = input("Gebe den Wert r aus dem inneren Kreis ein: ")
+    r1 = int(r1_not_int)
+    r2_not_int = input("Gebe den Wert r aus dem äuserem Kreis ein: ")
+    r2 = int(r2_not_int)
+    result = pi * r2 - pi * r1
+    print("\nDas Ergebnis beträgt:")
+    print("A=", result)
 
 
 print("Wähle deine Berechnungskategorie:\n")
