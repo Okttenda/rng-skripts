@@ -3,3 +3,9 @@
 .idea/modules.xml
 .idea/rng-skripts.iml
 .idea/vcs.xml
+money.json
+build/test/xref-test.html
+/dist
+/dist
+/build
+test.py
